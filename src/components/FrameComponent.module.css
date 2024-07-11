@@ -1,0 +1,206 @@
+.child {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightsteelblue-100);
+  box-sizing: border-box;
+}
+.email {
+  width: 187.5px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.div,
+.item {
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+}
+.div {
+  flex: 1;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) var(--padding-10xs);
+  position: relative;
+  min-width: 170px;
+}
+.item {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightsteelblue-100);
+}
+.email1 {
+  height: 34px;
+  width: 138.3px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.div1,
+.inner {
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+}
+.div1 {
+  width: 191px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-gray-100);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) var(--padding-11xs);
+  position: relative;
+}
+.inner {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightsteelblue-100);
+}
+.email2 {
+  height: 34px;
+  width: 189.7px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.div2,
+.parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.div2 {
+  flex: 1;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-100);
+  padding: var(--padding-smi) var(--padding-10xs);
+  box-sizing: border-box;
+  position: relative;
+  min-width: 170px;
+  white-space: nowrap;
+}
+.parent {
+  align-self: stretch;
+  flex-wrap: wrap;
+  gap: var(--gap-2xl-5);
+}
+.div3 {
+  position: relative;
+  display: inline-block;
+  min-width: 87px;
+}
+.button {
+  width: 330px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-darksalmon);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-2xs) var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.div4 {
+  position: relative;
+  display: inline-block;
+  min-width: 75px;
+}
+.button1 {
+  width: 330px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-lightgreen);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-2xs) var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.buttonParent {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-13xl);
+}
+.buttonParent,
+.frameParent,
+.paymentInner {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-23xl);
+}
+.paymentInner {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 var(--padding-9xl) 0 var(--padding-13xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 750px) {
+  .div3,
+  .div4 {
+    font-size: var(--font-size-7xl);
+  }
+  .buttonParent {
+    flex-wrap: wrap;
+  }
+  .frameParent {
+    gap: var(--gap-2xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .div3,
+  .div4,
+  .email,
+  .email1 {
+    font-size: var(--font-size-lgi);
+  }
+}

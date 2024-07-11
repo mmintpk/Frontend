@@ -1,0 +1,194 @@
+.payment {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+.paymentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0 0;
+}
+.statusIcon {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro-200);
+}
+.closeIcon {
+  height: 30px;
+  width: 40px;
+  position: absolute;
+  margin: 0 !important;
+  top: 5px;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+}
+.frameGroup,
+.frameWrapper,
+.statusIconParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.statusIconParent {
+  justify-content: flex-start;
+  position: relative;
+  gap: var(--gap-3xs);
+  cursor: pointer;
+}
+.frameGroup,
+.frameWrapper {
+  max-width: 100%;
+}
+.frameGroup {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frameWrapper {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-11xl);
+  box-sizing: border-box;
+}
+.div {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  line-height: 29.33px;
+  white-space: nowrap;
+}
+.paypal1Icon {
+  align-self: stretch;
+  height: 40.2px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+  display: none;
+}
+.paypal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgray);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-22xl);
+}
+.images1Icon {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 130px;
+  height: 32.2px;
+  object-fit: cover;
+  z-index: 1;
+}
+.kBank {
+  height: 52.2px;
+  flex: 1;
+  position: relative;
+  min-width: 125px;
+}
+.paypal1Icon1 {
+  align-self: stretch;
+  height: 40.2px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+  display: none;
+}
+.paypal1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgray);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-22xl);
+}
+.promptpayLogo1Icon {
+  position: absolute;
+  top: 7px;
+  left: 46px;
+  width: 100px;
+  height: 38.2px;
+  object-fit: cover;
+  z-index: 1;
+}
+.paypalParent {
+  height: 52.2px;
+  flex: 1;
+  position: relative;
+  min-width: 125px;
+  cursor: pointer;
+}
+.frameParent,
+.kBankParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.kBankParent {
+  width: 433px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 var(--padding-xl) 0 0;
+  gap: var(--gap-10xl);
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: column;
+  padding: 0 0 var(--padding-xs-8) var(--padding-11xs);
+  gap: var(--gap-13xl-5);
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 750px) {
+  .payment {
+    font-size: var(--font-size-7xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .payment {
+    font-size: var(--font-size-lgi);
+  }
+  .frameGroup {
+    flex-wrap: wrap;
+  }
+  .div {
+    font-size: var(--font-size-lgi);
+  }
+  .frameParent {
+    gap: var(--gap-base);
+  }
+}

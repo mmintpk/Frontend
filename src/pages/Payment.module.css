@@ -1,0 +1,80 @@
+.child {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightsteelblue-100);
+  box-sizing: border-box;
+}
+.div,
+.email {
+  position: relative;
+  max-width: 100%;
+}
+.email {
+  width: 546.5px;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-5xl);
+  background-color: transparent;
+  height: 34px;
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  padding: 0;
+  z-index: 1;
+}
+.div {
+  flex: 1;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-100);
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-smi) var(--padding-4xs);
+}
+.div,
+.payment,
+.wrapper {
+  display: flex;
+  box-sizing: border-box;
+}
+.wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-9xl) 0 var(--padding-13xl);
+  max-width: 100%;
+}
+.payment {
+  width: 100%;
+  position: relative;
+  box-shadow: 25px 50px 70px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  background: linear-gradient(180deg, #fff, #cdf);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-smi) 18px var(--padding-26xl);
+  gap: 54px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 450px) {
+  .email {
+    font-size: var(--font-size-lgi);
+  }
+  .payment {
+    gap: 27px;
+  }
+}
